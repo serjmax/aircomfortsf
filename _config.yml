@@ -21,7 +21,7 @@
 title: Air Comfort LLC
 email: support@acdcappliancerepair.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Air Comfort LLC diagnostics and repair of household appliances is fast and professional: refrigerators, ranges, dishwashers, ovens, microwave ovens, dryers and washing machines. We work in Dallas-Fort Worth Area.
+  Air Comfort LLC diagnostics and repair of household appliances is fast and professional: refrigerators, ranges, dishwashers, ovens, microwave ovens, dryers and washing machines. We work in San Francisco.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
