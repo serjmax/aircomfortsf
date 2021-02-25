@@ -1,0 +1,59 @@
+---
+layout: "wrapper"
+---
+
+<main role="main" class="main">
+
+    <!-- CAT -->
+    {% include cat-button.html %}
+
+    <article>
+
+        <!-- TOP HEADER -->
+        {% include  hero.html%}
+
+        <!-- CONTENT -->
+        <section>
+            <div class="fixed-width-container">
+                <div class="col-8">
+                    <hr>
+                    {{ content }}
+                </div>
+            </div>
+        </section>
+
+        <!-- CITIES -->
+        {% include cities.html %}
+
+        <!-- SERVICE DETAILS -->
+        {% if page.permalink == "/cooktop-repair" %}
+            {% include oven.html %}
+        {% elsif page.permalink == "/dishwasher-repair" %}
+            {% include dishwasher.html %}
+        {% elsif page.permalink == "/dryer-repair" %}
+            {% include dryer.html %}
+        {% elsif page.permalink == "/freezer-repair" %}
+            {% include refrigerator.html %}
+        {% elsif page.permalink == "/microwave-repair" %}
+            {% include microwave.html %}
+        {% elsif page.permalink == "/oven-repair" %}
+            {% include oven.html %}
+        {% elsif page.permalink == "/refrigerator-repair" %}
+            {% include refrigerator.html %}
+        {% elsif page.permalink == "/washer-repair" %}
+            {% include washer.html %}
+        {% endif %}
+
+        <!-- REVIEWS -->
+        {% include reviews.html %}
+
+        <!-- BENEFITS -->
+        {% include benefits.html %}
+
+        <!-- TRUST -->
+        {% include trust.html %}
+
+        <!-- SERVICES  -->
+        {% include services.html %}
+    </article>
+</main>

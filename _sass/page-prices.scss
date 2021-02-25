@@ -1,0 +1,50 @@
+/* PRICES PAGE */
+
+.prices--fee--container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.prices--fee--new-price{
+    background-color: var(--color-attention);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px 2px 8px;
+    width: 460px;
+}
+
+.prices--fee--text{
+    color: var(--color-white);
+    margin-top: 16px;
+}
+
+.prices--fee--old-price{
+    color: var(--color-muted);
+    margin-top: 20px;
+}
+
+.prices--h3{
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 960px){
+    .prices--fee--container{
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .prices--fee--text{
+        margin-top: 0px;
+        margin-bottom: 0px !important;
+    }
+    .prices--fee--new-price{
+        width: auto;
+        flex-direction: column;
+    }
+    .prices--fee--old-price{
+        margin-top: 0px;
+        margin-left: 8px;
+    }
+}

@@ -1,0 +1,37 @@
+/* 100 REASONS PAGE */
+
+.reasons--table-ol{
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: my-counter; /* Задаём имя счетчика */
+    margin: 0;
+    padding: 0;
+}
+
+.reasons--table-ol li::before {
+    content: counter(my-counter); /* Выводим число */
+    counter-increment: my-counter; /* Увеличиваем значение счётчика */
+    color: var(--color-attention);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.page--table--counter{
+    display: flex;
+}
+
+
+.reasons--table-cell{
+    width: 296px;
+}
+
+@media screen and (max-width: 960px){
+    .reasons--table-cell {
+        width: Calc(50vw - 32px);
+    }
+
+    .reasons--table-ol li::before{
+        margin-top: 8px;
+    }
+}

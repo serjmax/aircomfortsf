@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+            color: var(--color-primary);
+        }
+
+        .bg-hero{
+            position: absolute;
+            height: inherit;
+            width: 100%;
+            background-image: url(/assets/images/bg-image-2.webp);
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.2;
+            border-bottom: solid 1px;
+        }
+
+        @media screen and (max-width: 960px){
+            .bg-hero{
+                /* background-image: url(/assets/images/bg-image-2_mobile.webp); */
+                background-image: none;
+                border: none;
+            }
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{ site.title }} — {{ page.keyword }}</title>
+    <meta name="keywords" content="{{ page.keyword }}">
+    <meta name="description" content="{{page.subtitle}}">
+    <link rel="stylesheet" href="{{ 'css/style.css' | relative_url }}">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <!-- Google Tag Manager -->
+    <script async>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W3WPCD4');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+<body class="wrapper">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3WPCD4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {% include navigation.html %}
+    {{ content }}
+    {% include footer.html %}
+</body>
+</html>

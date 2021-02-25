@@ -1,0 +1,40 @@
+
+.service-icon{
+    &__set{
+        display: flex;
+        align-items: baseline;
+    }
+    &__link{
+        width: 102px;
+        text-align: center;
+        margin: 16px;
+        svg{
+            fill: var(--color-light-blue);
+        }
+    }
+
+    &__link-text{
+    }
+
+    &__bg{
+        width: 80px;
+        height: 80px;
+        background-color: var(--color-green);
+        position: relative;
+        top: 110px;
+        z-index: -1;
+        left: -10px;
+        border-radius: 100%;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    .service-icon{
+        &__set{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 16px;
+        }
+    }
+}

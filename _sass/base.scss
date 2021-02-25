@@ -1,0 +1,290 @@
+:root {
+    --color-primary: #262626;
+    --color-muted: #606060;
+    --color-light-grey: #f1f2f3;;
+    --color-white: white;
+    --color-white-60: rgba(255, 255, 255, 0.6);
+    --color-bg: #EFEFEF;
+    --color-attention: #ff3e50;
+    --color-attention__hover: #e32a44;
+    --color-blue: #001eaa;
+    --color-light-blue: #001F92;
+    --color-green: #e5fb3b;
+
+    --fixed-width: 944px;
+    --BODY-size: 16px;
+    --BODY-height: 24px;
+}
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: var(--BODY-height);
+    font-size: 100%;
+    // color: var(--color-primary);
+}
+
+body{
+    background-color: var(--color-white);
+    margin: 0;
+}
+
+h1.primary-headline{
+    font-size: 4.236em; // 67.77px
+    line-height: 80px;
+    margin-top: 4px;
+    color: var(--color-light-blue);
+}
+
+h2.primary-subheadline{
+    font-size: 1.618em; // 25.89px
+    font-weight: normal;
+    line-height: 32px;
+    margin-top: 6px;
+}
+
+h3.meta{
+    font-size: 1.618em; // 25.89px
+    line-height: 32px;
+    margin-top: 6px;
+}
+
+h2.section-headline{
+    font-size: 2.618em; // 41.89px
+    line-height: 48px;
+    color: var(--color-light-blue);
+    margin-top: Calc(8px + 16px);
+    margin-bottom: 14px;
+
+    &__white{
+        color: var(--color-white);
+    }
+}
+
+h3.section-subheadline{
+    font-size: 1.618em; // 25.89px
+    line-height: 32px;
+    margin-top: Calc(6px + 31px);
+    color: var(--color-light-blue);
+}
+
+h4.section-label{
+    font-size: 1em;
+    margin-top: 24px;
+}
+
+h1, h2, h3, h4{
+    font-weight: 600;
+    margin: 0;
+}
+
+
+p.big{
+    font-size: 1em; // 16px
+    margin-top: 3px;
+    margin-bottom: 10px; // проверить везде ли работает
+}
+
+p.big + p.big{
+    margin-top: 16px;
+}
+
+p.small{
+    font-size: 0.75em; //12px
+    line-height: 16px;
+    margin-top: 12px;
+}
+
+p.caption{
+    font-size: 0.382em; // 6.11px
+    line-height: 10px;
+    margin-top: 16px;
+}
+
+p.pullquote{
+    font-size: 1.618em; // 25.89px
+    line-height: 32px;
+    margin-top: Calc(6px - 9px);
+    margin-bottom: 12px;
+}
+
+h4+p{
+    margin-top: 3px !important;
+}
+
+hr{
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin-bottom: 0px;
+    background-color: var(--color-light-blue);
+    border: none;
+    margin: 0 0 32px 0;
+    padding: 0;
+}
+
+ol{
+    margin-top: 2px;
+}
+
+ul{
+    margin-top: 21px;
+    margin-bottom: 0px;
+    padding-left: 16px;
+}
+
+li{
+    font-size: 1em; // 16px
+    line-height: var(--BODY-height);
+    margin-bottom: 8px;
+}
+
+.two-column{
+    column-count: 2;
+    list-style: none;
+    padding-left: unset;
+}
+
+.four-column{
+    column-count: 4;
+    list-style: none;
+    padding-left: unset;
+}
+
+.white{
+    color: var(--color-white) !important;
+
+    &__muted{
+        color: var(--color-white-60);
+    }
+}
+
+.link{
+    &--white{
+        &__muted{
+            color: var(--color-white-60);
+            &:hover{
+                color: var(--color-white)
+            }
+        }
+    }
+}
+
+section{
+    padding: 16px 16px 32px 16px;
+}
+
+.section{
+    &__colored{
+        background-color: var(--color-light-blue);
+        margin-bottom: 64px;
+        padding-top: 64px;
+    }
+}
+
+section:last-child{
+    margin-bottom: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-light-blue);
+}
+
+a:hover{
+    color: var(--color-attention);
+}
+
+@media screen and (max-width: 320px){
+    body{
+        zoom: 0.85;
+    }
+}
+
+.ordered-list{
+    ul{
+        list-style-type: none; /* Убираем исходные маркеры */
+        counter-reset: counter; /* Задаём имя счетчика */
+        margin: 0;
+        padding: 0;
+    }
+
+    li::before {
+        content: counter(counter); /* Выводим число */
+        counter-increment: counter; /* Увеличиваем значение счётчика */
+        color: var(--color-attention);
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 8px;
+        margin-top: 8px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 960px){
+
+    h1.primary-headline{
+        font-size: 4.236em; // 67.77px
+        line-height: 80px;
+        margin-top: 4px;
+        color: var(--color-light-blue);
+    }
+
+    h2.primary-subheadline{
+        font-size: 1em; // 16px
+        line-height: 24px;
+        font-weight: normal;
+        margin-top: 8px;
+    }
+
+    h3.meta{
+        font-size: 1em; // 16px
+        margin-top: 8px;
+    }
+
+    h2.section-headline{
+        font-size: 1.618em; // 25.89px
+        line-height: 32px;
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+
+    h3.section-subheadline{
+        font-size: 1em; // 16px
+        line-height: 24px;
+        margin-top: Calc(8px + 16px);
+    }
+
+    h4.section-label{
+        font-size: 1em; // 16px
+        line-height: 24px;
+        margin-top: Calc(8px + 16px);
+    }
+
+    p.big{
+        margin-bottom: 2px; // проверить везде ли работает
+        margin-top: 8px;
+    }
+
+    ul{
+        margin-top: 8px;
+    }
+
+    .four-column{
+        columns: 2;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    body{
+        zoom:1.4;
+    }
+}
