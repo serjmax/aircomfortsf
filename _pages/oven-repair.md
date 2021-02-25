@@ -12,4 +12,4 @@ Broken cooktop, range or stove might ruin your daily kitchen routine. Don’t le
 {:.big}
 If your oven, cooktop, or range won’t work, first check the circuit breaker and test for power. If it’s on, test the surface purner (make sure you have a standard one) and the burner switch. If your oven temperature doesn’t look right, check if controls, oven selector and temperature switches are set in a proper way. If not, set temperature level to the desired one and test for voltage.
 <br><br>
-Or, instead of these steps, call AC/DC Appliance Repair! Mind that working with high voltage is dangerous, and calling a professional will be much safer.
+Or, instead of these steps, call Air Comfort LLC! Mind that working with high voltage is dangerous, and calling a professional will be much safer.

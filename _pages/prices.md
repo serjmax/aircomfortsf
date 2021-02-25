@@ -2,8 +2,8 @@
 layout: page
 title: Prices
 permalink: /prices/
-sublitle: Prices AC/DC HVAC & Appliance Repair
-keyword: Prices AC/DC HVAC & Appliance Repair
+sublitle: Prices Air Comfort LLC
+keyword: Prices Air Comfort LLC
 ---
 
 <!-- CONTENT -->
@@ -14,14 +14,14 @@ keyword: Prices AC/DC HVAC & Appliance Repair
             <h2 class="section-headline">Our policy “NO satisfaction – NO charge”</h2>
             <div class="card">
                 <h3 class="section-subheadline">Residential and commercial appliances</h3>
-                <p class="big">Appliance diagnostic fee equals <strong>$60</strong>, but if you decide to fix it at AC/DC Appliance Repair, the estimate will be <strong>free</strong>.</p>
+                <p class="big">Appliance diagnostic fee equals <strong>$60</strong>, but if you decide to fix it at Air Comfort LLC, the estimate will be <strong>free</strong>.</p>
                 <p class="big">
                     Minimum labor fee – <strong>$125</strong> if you decide to fix. Labor price depends on by suffer score of repair (location of equipment, the hardness of the problem and etc).
                 </p>
             </div>
             <div class="card">
                 <h3 class="section-subheadline" >Heating ventilation and air conditioning</h3>
-                <p class="big">Service call fee equals <strong>$90</strong>, but if you decide to fix it at AC/DC Appliance Repair, the estimate will be <strong>free</strong>.</p>
+                <p class="big">Service call fee equals <strong>$90</strong>, but if you decide to fix it at Air Comfort LLC, the estimate will be <strong>free</strong>.</p>
                 <p class="big">
                     Minimum labor fee – <strong>$125</strong> if you decide to fix. Labor price depends on by suffer score of repair (location of equipment, the hardness of the problem and etc).
                 </p>

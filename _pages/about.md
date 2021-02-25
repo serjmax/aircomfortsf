@@ -2,8 +2,8 @@
 layout: page
 permalink: /about/
 title: About
-keyword: About AC/DC HVAC & Appliance Repair
-sublitle: About AC/DC HVAC & Appliance Repair
+keyword: About Air Comfort LLC
+sublitle: About Air Comfort LLC
 ---
 
 <!-- OPENER -->
